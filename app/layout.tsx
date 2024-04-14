@@ -8,7 +8,10 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 export const metadata: Metadata = {
-  title: "Dream Employ",
+  title: {
+    default: "Dream Employ",
+    template: "%s | Dream Employ",
+  },
   description: "Find Your Perfect Career Match on Dream Employ",
 };
 
