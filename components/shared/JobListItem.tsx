@@ -1,5 +1,5 @@
 import { Job } from "@prisma/client";
-import companyLogoPlaceholder from "@/public/assets/company-logo-placeholder.png";
+import companyLogoPlaceholder from "@/public/assets/job.svg";
 import Image from "next/image";
 import { Banknote, Briefcase, Clock, Globe2, MapPin } from "lucide-react";
 import { Badge } from "../ui/badge";
