@@ -5,6 +5,9 @@ import { Prisma } from "@prisma/client";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import JobListItem from "./JobListItem";
+import { Button } from "../ui/button";
+import Image from "next/image";
+import { Badge } from "../ui/badge";
 
 interface JobResultsProps {
   filterValues: JobFilterValues;
@@ -66,9 +69,18 @@ export default async function JobResults({
         </Link>
       ))}
       {jobs.length === 0 && (
-        <p className="m-auto text-center">
-          No jobs found. Try adjusting your search filters.
-        </p>
+        <div className="flex flex-col">
+          <p className="m-auto text-center text-muted-foreground p-regular-20 md:p-regular-24">
+            No jobs found. Try adjusting your search filters.
+          </p>
+          <Image
+            src="/assets/no-work.svg"
+            alt="error"
+            width={1000}
+            height={1000}
+            className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh]"
+          />
+        </div>
       )}
       {jobs.length > 0 && (
         <Pagination
@@ -106,29 +118,33 @@ function Pagination({
 
   return (
     <div className="flex justify-between">
-      <Link
-        href={generatePageLink(currentPage - 1)}
-        className={cn(
-          "flex items-center gap-2 font-semibold",
-          currentPage <= 1 && "invisible",
-        )}
-      >
-        <ArrowLeft size={16} />
-        Previous page
-      </Link>
+      <Button asChild variant="outline">
+        <Link
+          href={generatePageLink(currentPage - 1)}
+          className={cn(
+            "flex items-center gap-2 font-semibold",
+            currentPage <= 1 && "invisible",
+          )}
+        >
+          <ArrowLeft size={16} />
+          Previous
+        </Link>
+      </Button>
       <span className="font-semibold">
         Page {currentPage} of {totalPages}
       </span>
-      <Link
-        href={generatePageLink(currentPage + 1)}
-        className={cn(
-          "flex items-center gap-2 font-semibold",
-          currentPage >= totalPages && "invisible",
-        )}
-      >
-        Next page
-        <ArrowRight size={16} />
-      </Link>
+      <Button asChild variant="outline">
+        <Link
+          href={generatePageLink(currentPage + 1)}
+          className={cn(
+            "flex items-center gap-2 font-semibold",
+            currentPage >= totalPages && "invisible",
+          )}
+        >
+          Next
+          <ArrowRight size={16} />
+        </Link>
+      </Button>
     </div>
   );
 }
