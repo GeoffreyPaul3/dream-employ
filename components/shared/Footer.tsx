@@ -19,7 +19,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              Connecting talents with opportunities
+              Take the next step towards your future success today!
             </p>
           </div>
           <div className="flex flex-wrap gap-5 text-sm text-muted-foreground">

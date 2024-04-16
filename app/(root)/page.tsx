@@ -60,8 +60,8 @@ export default async function Home({
         <div className="space-y-5">
           <h1 className="h1-bold">{getTitle(filterValues)}</h1>
           <p className="text-muted-foreground p-regular-20 md:p-regular-24">
-            Explore thousands of job postings from best employers in Malawi.
-            Take the next step toward your success today!
+            Explore thousands of job postings from best employers in Malawi and
+            beyond.
           </p>
           <Button
             size="lg"
