@@ -21,7 +21,7 @@ import { X } from "lucide-react";
 import { draftToMarkdown } from "markdown-draft-js";
 import { useForm } from "react-hook-form";
 import { createJobPosting } from "./action";
-
+import { useToast } from "@/components/ui/use-toast";
 
 export default function NewJobForm() {
   const form = useForm<CreateJobValues>({
@@ -47,6 +47,9 @@ export default function NewJobForm() {
       }
     });
 
+    const { toast } = useToast();
+
+
     try {
       await createJobPosting(formData);
     } catch (error) {
@@ -57,8 +60,8 @@ export default function NewJobForm() {
   return (
     <main className="m-auto my-10 max-w-3xl space-y-10">
       <div className="space-y-5 text-center">
-      <h1 className="h1-bold">Find the perfect employee. </h1>
-      <p className="text-muted-foreground p-regular-20 md:p-regular-24">
+        <h1 className="h1-bold">Find the perfect employee. </h1>
+        <p className="text-muted-foreground p-regular-20 md:p-regular-24">
           Get your job posting seen by thousands of job seekers.
         </p>
       </div>
