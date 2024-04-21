@@ -21,7 +21,7 @@ import { X } from "lucide-react";
 import { draftToMarkdown } from "markdown-draft-js";
 import { useForm } from "react-hook-form";
 import { createJobPosting } from "./action";
-import { useToast } from "@/components/ui/use-toast";
+
 
 export default function NewJobForm() {
   const form = useForm<CreateJobValues>({
@@ -47,7 +47,6 @@ export default function NewJobForm() {
       }
     });
 
-    const { toast } = useToast();
 
 
     try {
