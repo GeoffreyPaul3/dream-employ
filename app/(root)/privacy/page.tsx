@@ -1,6 +1,6 @@
 export default function PrivacyPolicy() {
     return (
-      <div className="m-auto my-10 max-w-3xl space-y-10">
+      <div className="m-auto my-10 max-w-5xl space-y-10 px-3">
         <p className="text-muted-foreground p-regular-20 md:p-regular-24">Effective Date: Sunday, April 21, 2024</p>
         <p className="text-muted-foreground p-regular-20 md:p-regular-24">
           At Dream Employ, we are committed to safeguarding your privacy. This Privacy

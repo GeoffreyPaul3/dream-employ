@@ -1,6 +1,6 @@
 export default function HowItWorks() {
   return (
-    <div className="m-auto my-10 max-w-3xl space-y-10">
+    <div className="m-auto my-10 max-w-5xl space-y-10 px-3">
       <h1 className="h1-bold">How It Works</h1>
       <div className="space-y-2">
         <h2 className="h2-medium">1. Post Your Job for Free</h2>
@@ -52,7 +52,7 @@ export default function HowItWorks() {
       <div className="space-y-2">
         <h2 className="h2-medium">Accepted Payment Methods</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="border rounded-lg p-4 overflow-hidden shadow-md transition-all hover:shadow-lg">
+          <div className="border rounded-lg p-4 shadow-md transition-all hover:shadow-lg">
             <h3 className="font-medium text-xl mb-4">Bank Transfers</h3>
             <p className="text-muted-foreground p-regular-20 md:p-regular-24 mb-2">
               To make a payment via bank transfer, please use the following
@@ -64,7 +64,7 @@ export default function HowItWorks() {
               <li>Branch Name: FDH Mulanje Branch</li>
             </ul>
           </div>
-          <div className="border rounded-lg p-4 overflow-hidden shadow-md transition-all hover:shadow-lg">
+          <div className="border rounded-lg p-4 shadow-md transition-all hover:shadow-lg">
             <h3 className="font-medium text-xl mb-4">Mobile Money</h3>
             <p className="text-muted-foreground p-regular-20 md:p-regular-24 mb-2">
               To make a payment via mobile money, please use the following

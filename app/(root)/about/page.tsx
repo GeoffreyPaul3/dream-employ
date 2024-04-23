@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="m-auto my-10 max-w-3xl space-y-10">
+    <div className="m-auto my-10 max-w-5xl space-y-10 px-3">
       <p className="text-muted-foreground p-regular-20 md:p-regular-24">
         Welcome to Dream Employ, your ultimate destination for unlocking career
         opportunities and connecting with top-tier employers in Malawi and
