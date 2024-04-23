@@ -60,13 +60,13 @@ export default async function Home({
         <div className="space-y-5">
           <h1 className="h1-bold">{getTitle(filterValues)}</h1>
           <p className="text-muted-foreground p-regular-20 md:p-regular-24">
-            Explore thousands of job postings from best the employers in Malawi and
-            beyond.
+            Explore thousands of job postings from best the employers in Malawi
+            and beyond.
           </p>
           <Button
             size="lg"
             asChild
-            className="bg-blue-500 hover:bg-blue-400 w-full sm:w-fit"
+            className="bg-blue-500 hover:bg-blue-600 w-full sm:w-fit"
           >
             <Link href="#jobs">Search for Jobs</Link>
           </Button>

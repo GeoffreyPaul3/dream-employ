@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Contact } from "./Contact";
+import { Button } from "../ui/button";
 
 export default function Footer() {
   return (
@@ -23,18 +25,22 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-wrap gap-5 text-sm text-muted-foreground">
-            <Link href="/about" className="hover:underline">
-              About Us
+            <Link href="/about">
+              <Button variant="ghost" className="font-semibold text-md">
+                About
+              </Button>
             </Link>
-            <Link href="/contact" className="hover:underline">
-              Contact
+            <Link href="/how-it-works">
+              <Button variant="ghost" className="font-semibold text-md">
+                How It Works
+              </Button>
             </Link>
-            <Link href="/how-it-works" className="hover:underline">
-              How It Works
+            <Link href="/privacy">
+              <Button variant="ghost" className="font-semibold text-md">
+                Privacy Policy
+              </Button>
             </Link>
-            <Link href="/privacy" className="hover:underline">
-              Privacy Policy
-            </Link>
+              <Contact />
           </div>
         </div>
         <div className="text-center text-sm text-muted-foreground">

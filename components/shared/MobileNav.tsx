@@ -45,20 +45,20 @@ const MobileNav = () => {
                     Home
                   </Button>
                 </Link>
-                <Link href="/jobs/new">
-                  <Button
-                    variant="link"
-                    className="font-semibold text-md w-full"
-                  >
-                    Post a Job
-                  </Button>
-                </Link>
                 <Link href="/about">
                   <Button
                     variant="link"
                     className="font-semibold text-md w-full"
                   >
                     About
+                  </Button>
+                </Link>
+                <Link href="/jobs/new">
+                  <Button
+                    variant="link"
+                    className="font-semibold text-md w-full"
+                  >
+                    Post a Job
                   </Button>
                 </Link>
                 <Link href="/how-it-works">

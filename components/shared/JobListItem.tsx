@@ -22,7 +22,7 @@ const JobListItem = ({
   },
 }: JobListItemProps) => {
   return (
-    <article className="flex gap-3 rounded-lg border p-5 hover:bg-muted/60">
+    <article className="flex gap-3 rounded-lg border p-5 hover:bg-muted/60 shadow-md transition-all hover:shadow-lg">
       <Image
         src={companyLogoUrl || companyLogoPlaceholder}
         alt={`${companyName} logo`}
@@ -59,7 +59,7 @@ const JobListItem = ({
         </div>
       </div>
       <div className="hidden shrink-0 flex-col items-end justify-between sm:flex">
-        <Badge variant="default" className="bg-blue-500  hover:bg-blue-400 ">
+        <Badge variant="default" className="bg-blue-500  hover:bg-blue-600">
           {type}
         </Badge>
         <span className="flex items-center gap-1.5 text-muted-foreground">
