@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import MobileNav from "./MobileNav";
 
 export default function Navbar() {
   return (
     <header className="shadow-sm">
-      <nav className="m-auto flex max-w-5xl items-center justify-between px-3 py-5">
+      <nav className="w-full m-auto flex max-w-5xl items-center justify-between px-3 py-5">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/assets/Logo.png"
@@ -17,9 +18,27 @@ export default function Navbar() {
             Dream Employ
           </span>
         </Link>
-        <Button asChild className="bg-blue-500 hover:bg-blue-400">
+        <div className="gap-1 md:gap-2 lg:gap-4 hidden md:flex">
+          <Link href="/about">
+            <Button variant="ghost" className="font-semibold text-md">
+              About
+            </Button>
+          </Link>
+          <Link href="/how-it-works">
+            <Button variant="ghost" className="font-semibold text-md">
+              How It Works
+            </Button>
+          </Link>
+          <Link href="/privacy">
+            <Button variant="ghost" className="font-semibold text-md">
+              Privacy Policy
+            </Button>
+          </Link>
+        </div>
+        <Button asChild className="bg-blue-500 hover:bg-blue-400 hidden md:flex">
           <Link href="/jobs/new">Post a job</Link>
         </Button>
+        <MobileNav />
       </nav>
     </header>
   );

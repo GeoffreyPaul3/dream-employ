@@ -29,8 +29,8 @@ export default function Footer() {
             <Link href="/contact" className="hover:underline">
               Contact
             </Link>
-            <Link href="/terms" className="hover:underline">
-              Terms of Service
+            <Link href="/how-it-works" className="hover:underline">
+              How It Works
             </Link>
             <Link href="/privacy" className="hover:underline">
               Privacy Policy
