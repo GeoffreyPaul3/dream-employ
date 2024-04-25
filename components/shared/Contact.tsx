@@ -13,7 +13,7 @@ export function Contact() {
   return (
     <HoverCard>
       <HoverCardTrigger asChild>
-        <Button variant="ghost" className="font-semibold text-md">
+        <Button variant="ghost" className="font-medium text-md">
           Contact
         </Button>
       </HoverCardTrigger>
@@ -24,7 +24,7 @@ export function Contact() {
             <AvatarFallback>DM</AvatarFallback>
           </Avatar>
           <div className="space-y-1">
-            <h4 className="text-sm font-semibold">Dream Employ</h4>
+            <h4 className="text-sm font-medium">Dream Employ</h4>
             <p className="text-sm">
               If you have any questions, feedback, or inquiries, feel free to
               reach out to us. We&#39;re here to help!

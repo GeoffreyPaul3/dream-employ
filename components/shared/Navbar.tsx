@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import MobileNav from "./MobileNav";
+import { Contact } from "./Contact";
 
 export default function Navbar() {
   return (
@@ -19,23 +20,32 @@ export default function Navbar() {
           </span>
         </Link>
         <div className="gap-1 md:gap-2 lg:gap-4 hidden md:flex">
+          <Link href="/">
+            <Button variant="ghost" className="font-medium text-md">
+              Home
+            </Button>
+          </Link>
           <Link href="/about">
-            <Button variant="ghost" className="font-semibold text-md">
+            <Button variant="ghost" className="font-medium text-md">
               About
             </Button>
           </Link>
           <Link href="/how-it-works">
-            <Button variant="ghost" className="font-semibold text-md">
+            <Button variant="ghost" className="font-medium text-md">
               How It Works
             </Button>
           </Link>
           <Link href="/privacy">
-            <Button variant="ghost" className="font-semibold text-md">
+            <Button variant="ghost" className="font-medium text-md">
               Privacy Policy
             </Button>
           </Link>
+          <Contact />
         </div>
-        <Button asChild className="bg-blue-500 hover:bg-blue-400 hidden md:flex">
+        <Button
+          asChild
+          className="bg-blue-500 hover:bg-blue-400 hidden md:flex"
+        >
           <Link href="/jobs/new">Post a job</Link>
         </Button>
         <MobileNav />

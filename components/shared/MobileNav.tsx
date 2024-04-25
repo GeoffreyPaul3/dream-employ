@@ -11,6 +11,7 @@ import Image from "next/image";
 import { Separator } from "../ui/separator";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { Contact } from "./Contact";
 
 const MobileNav = () => {
   return (
@@ -21,62 +22,48 @@ const MobileNav = () => {
             <Menu />
           </span>
         </SheetTrigger>
-        <SheetContent className="flex flex-col gap-6 bg-white md:hidden">
+        <SheetContent className="flex flex-col gap-6  md:hidden">
           <div className="flex items-center">
-          <Image
-            src="/assets/Logo.png"
-            width={70}
-            height={70}
-            alt="Dream Employ logo"
-          />
-          <span className="text-2xl font-semibold text-blue-500 tracking-tight">
-            Dream Employ
-          </span>
+            <Image
+              src="/assets/Logo.png"
+              width={70}
+              height={70}
+              alt="Dream Employ logo"
+            />
+            <span className="text-2xl font-semibold text-blue-500 tracking-tight">
+              Dream Employ
+            </span>
           </div>
           <Separator className="border border-gray-50" />
           <SheetHeader>
             <SheetDescription>
               <div className="w-full space-y-3">
                 <Link href="/">
-                  <Button
-                    variant="link"
-                    className="font-semibold text-md w-full"
-                  >
+                  <Button variant="link" className="font-medium text-md w-full">
                     Home
                   </Button>
                 </Link>
                 <Link href="/about">
-                  <Button
-                    variant="link"
-                    className="font-semibold text-md w-full"
-                  >
+                  <Button variant="link" className="font-medium text-md w-full">
                     About
                   </Button>
                 </Link>
                 <Link href="/jobs/new">
-                  <Button
-                    variant="link"
-                    className="font-semibold text-md w-full"
-                  >
+                  <Button variant="link" className="font-medium text-md w-full">
                     Post a Job
                   </Button>
                 </Link>
                 <Link href="/how-it-works">
-                  <Button
-                    variant="link"
-                    className="font-semibold text-md w-full"
-                  >
+                  <Button variant="link" className="font-medium text-md w-full">
                     How It Works
                   </Button>
                 </Link>
                 <Link href="/privacy">
-                  <Button
-                    variant="link"
-                    className="font-semibold text-md w-full"
-                  >
+                  <Button variant="link" className="font-medium text-md w-full">
                     Privacy Policy
                   </Button>
                 </Link>
+                <Contact />
               </div>
             </SheetDescription>
           </SheetHeader>

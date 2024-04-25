@@ -25,22 +25,27 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-wrap gap-5 text-sm text-muted-foreground">
+            <Link href="/">
+              <Button variant="ghost" className="font-medium text-md">
+                Home
+              </Button>
+            </Link>
             <Link href="/about">
-              <Button variant="ghost" className="font-semibold text-md">
+              <Button variant="ghost" className="font-medium text-md">
                 About
               </Button>
             </Link>
             <Link href="/how-it-works">
-              <Button variant="ghost" className="font-semibold text-md">
+              <Button variant="ghost" className="font-medium text-md">
                 How It Works
               </Button>
             </Link>
             <Link href="/privacy">
-              <Button variant="ghost" className="font-semibold text-md">
+              <Button variant="ghost" className="font-medium text-md">
                 Privacy Policy
               </Button>
             </Link>
-              <Contact />
+            <Contact />
           </div>
         </div>
         <div className="text-center text-sm text-muted-foreground">

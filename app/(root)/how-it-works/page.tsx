@@ -28,16 +28,16 @@ export default function HowItWorks() {
           <div className="border rounded-lg p-4 overflow-hidden shadow-md transition-all hover:shadow-lg">
             <h3 className="font-medium">Basic Listing</h3>
             <p className="text-muted-foreground p-regular-20 md:p-regular-24">
-              The nominal fee for basic job listings is $X per month, which
-              allows posting up to 5 job listings per month.
+              The nominal fee for basic job listings is MWK150,000.00 per month,
+              which allows posting up to 5 job listings per month.
             </p>
           </div>
           <div className="border rounded-lg p-4 overflow-hidden shadow-md transition-all hover:shadow-lg">
             <h3 className="font-medium">Premium Listing</h3>
             <p className="text-muted-foreground p-regular-20 md:p-regular-24">
               Upgrade to a premium listing for enhanced visibility and
-              additional features. The premium plan is available for $Y per
-              month, offering unlimited job postings.
+              additional features. The premium plan is available for MWK350,000
+              per month, offering unlimited job postings.
             </p>
           </div>
         </div>
