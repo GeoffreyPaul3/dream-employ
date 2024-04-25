@@ -59,7 +59,7 @@ export default function About() {
 
       <div className="space-y-2">
         <h2 className="h2-medium">🌟 Your Gateway to Success:</h2>
-        <p>
+        <p className="text-muted-foreground p-regular-20 md:p-regular-24">
           Join the thousands of job seekers who have found success through Dream
           Employ. Take the next step in your career journey and unlock a world
           of opportunities with us.
