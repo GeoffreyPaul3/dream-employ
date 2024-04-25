@@ -74,7 +74,7 @@ export default async function JobResults({
             No jobs found. Try adjusting your search filters.
           </p>
           <Image
-            src="/assets/no-work.svg"
+            src="/assets/No-work.svg"
             alt="error"
             width={1000}
             height={1000}
