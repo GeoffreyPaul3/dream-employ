@@ -41,6 +41,8 @@ export async function createJobPosting(formData: FormData) {
     companyLogoUrl = blob.url;
   }
 
+  const parsedSalary = typeof salary === 'string' ? parseInt(salary) : undefined;
+
   await prisma.job.create({
     data: {
       slug,
@@ -53,7 +55,7 @@ export async function createJobPosting(formData: FormData) {
       applicationEmail: applicationEmail?.trim(),
       applicationUrl: applicationUrl?.trim(),
       description: description?.trim(),
-      salary: parseInt(salary),
+      salary: parsedSalary,
     },
   });
 
