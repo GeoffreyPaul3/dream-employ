@@ -39,31 +39,30 @@ const MobileNav = () => {
             <SheetDescription>
               <div className="w-full space-y-3">
                 <Link href="/">
-                  <Button variant="link" className="font-medium text-md w-full">
+                  <Button variant="link" className="font-semibold text-md w-full">
                     Home
                   </Button>
                 </Link>
                 <Link href="/about">
-                  <Button variant="link" className="font-medium text-md w-full">
+                  <Button variant="link" className="font-semibold text-md w-full">
                     About
                   </Button>
                 </Link>
                 <Link href="/jobs/new">
-                  <Button variant="link" className="font-medium text-md w-full">
+                  <Button variant="link" className="font-semibold text-md w-full">
                     Post a Job
                   </Button>
                 </Link>
                 <Link href="/how-it-works">
-                  <Button variant="link" className="font-medium text-md w-full">
+                  <Button variant="link" className="font-semibold text-md w-full">
                     How It Works
                   </Button>
                 </Link>
                 <Link href="/privacy">
-                  <Button variant="link" className="font-medium text-md w-full">
+                  <Button variant="link" className="font-semibold text-md w-full">
                     Privacy Policy
                   </Button>
                 </Link>
-                <Contact />
               </div>
             </SheetDescription>
           </SheetHeader>

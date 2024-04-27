@@ -21,30 +21,24 @@ export default function Navbar() {
         </Link>
         <div className="gap-1 md:gap-2 lg:gap-4 hidden md:flex">
           <Link href="/">
-            <Button variant="ghost" className="font-medium text-md">
+            <Button variant="ghost" className="font-semibold text-md">
               Home
             </Button>
           </Link>
           <Link href="/about">
-            <Button variant="ghost" className="font-medium text-md">
+            <Button variant="ghost" className="font-semibold text-md">
               About
             </Button>
           </Link>
           <Link href="/how-it-works">
-            <Button variant="ghost" className="font-medium text-md">
+            <Button variant="ghost" className="font-semibold text-md">
               How It Works
             </Button>
           </Link>
-          <Link href="/privacy">
-            <Button variant="ghost" className="font-medium text-md">
-              Privacy Policy
-            </Button>
-          </Link>
-          <Contact />
         </div>
         <Button
           asChild
-          className="bg-blue-500 hover:bg-blue-400 hidden md:flex"
+          className="bg-blue-500 hover:bg-blue-400 hidden md:flex text-md"
         >
           <Link href="/jobs/new">Post a job</Link>
         </Button>
