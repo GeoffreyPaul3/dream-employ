@@ -1,6 +1,7 @@
 "use client";
 
-import { useClerk } from "@clerk/nextjs";
+import { Button } from "@/components/ui/button";
+import { UserButton, useClerk } from "@clerk/nextjs";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -12,21 +13,12 @@ export default function AdminNavbar() {
     <div className="px-3">
       <div className="m-auto flex h-10 max-w-5xl items-center justify-between gap-2">
         <Link href="/admin" className="font-semibold underline">
-          Admin Dashboard
+          <Button variant="outline" className="font-semibold text-md">
+            Admin Dashboard
+          </Button>
         </Link>
         <div className="space-x-2">
-          <span className="font-semibold">
-            {user?.primaryEmailAddress?.emailAddress}
-          </span>
-          <button
-            onClick={async () => {
-              await signOut();
-              router.push("/");
-            }}
-            className="underline"
-          >
-            Log out
-          </button>
+          <UserButton />
         </div>
       </div>
     </div>

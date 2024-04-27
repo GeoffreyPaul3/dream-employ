@@ -1,4 +1,5 @@
 import JobListItem from "@/components/shared/JobListItem";
+import { Separator } from "@/components/ui/separator";
 import prisma from "@/lib/prisma";
 import Link from "next/link";
 
@@ -10,6 +11,7 @@ export default async function AdminPage() {
   return (
     <main className="m-auto my-10 max-w-5xl space-y-10 px-3">
       <h1 className="text-center h1-bold">Admin Dashboard</h1>
+      <Separator className="border border-gray-50" />
       <section className="flex flex-col gap-3">
         <h2 className="text-lg font-bold">Unapproved jobs:</h2>
         {unapprovedJobs.map((job) => (
