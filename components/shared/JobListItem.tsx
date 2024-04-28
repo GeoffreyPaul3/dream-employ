@@ -1,4 +1,4 @@
-import companyLogoPlaceholder from "@/assets/found.svg";
+import Logo from "@/assets/Logo.svg";
 import { formatMoney, relativeDate } from "@/lib/utils";
 import { Job } from "@prisma/client";
 import { Banknote, Briefcase, Clock, Globe2, MapPin } from "lucide-react";
@@ -24,7 +24,7 @@ export default function JobListItem({
   return (
     <article className="flex gap-3 rounded-lg border p-5 hover:bg-muted/60">
       <Image
-        src={companyLogoUrl || companyLogoPlaceholder}
+        src={companyLogoUrl || Logo}
         alt={`${companyName} logo`}
         width={100}
         height={100}
