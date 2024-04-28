@@ -1,28 +1,28 @@
-import { Job } from "@prisma/client";
-import companyLogoPlaceholder from "@/public/assets/job.svg";
-import Image from "next/image";
-import { Banknote, Briefcase, Clock, Globe2, MapPin } from "lucide-react";
-import { Badge } from "../ui/badge";
+import companyLogoPlaceholder from "@/assets/company-logo-placeholder.png";
 import { formatMoney, relativeDate } from "@/lib/utils";
+import { Job } from "@prisma/client";
+import { Banknote, Briefcase, Clock, Globe2, MapPin } from "lucide-react";
+import Image from "next/image";
+import Badge from "./Badge";
 
 interface JobListItemProps {
   job: Job;
 }
 
-const JobListItem = ({
+export default function JobListItem({
   job: {
     title,
     companyName,
     type,
-    location,
     locationType,
+    location,
     salary,
     companyLogoUrl,
     createdAt,
   },
-}: JobListItemProps) => {
+}: JobListItemProps) {
   return (
-    <article className="flex gap-3 rounded-lg border p-5 hover:bg-muted/60 shadow-md transition-all hover:shadow-lg">
+    <article className="flex gap-3 rounded-lg border p-5 hover:bg-muted/60">
       <Image
         src={companyLogoUrl || companyLogoPlaceholder}
         alt={`${companyName} logo`}
@@ -48,13 +48,10 @@ const JobListItem = ({
             <Globe2 size={16} className="shrink-0" />
             {location || "Worldwide"}
           </p>
-          {salary !== null && typeof salary === "number" && (
-            <p className="flex items-center gap-1.5">
-              <Banknote size={16} className="shrink-0" />
-              {formatMoney(salary)}
-            </p>
-          )}
-
+          <p className="flex items-center gap-1.5">
+            <Banknote size={16} className="shrink-0" />
+            {formatMoney(salary)}
+          </p>
           <p className="flex items-center gap-1.5 sm:hidden">
             <Clock size={16} className="shrink-0" />
             {relativeDate(createdAt)}
@@ -62,9 +59,7 @@ const JobListItem = ({
         </div>
       </div>
       <div className="hidden shrink-0 flex-col items-end justify-between sm:flex">
-        <Badge variant="default" className="bg-blue-500  hover:bg-blue-600">
-          {type}
-        </Badge>
+        <Badge>{type}</Badge>
         <span className="flex items-center gap-1.5 text-muted-foreground">
           <Clock size={16} />
           {relativeDate(createdAt)}
@@ -72,6 +67,4 @@ const JobListItem = ({
       </div>
     </article>
   );
-};
-
-export default JobListItem;
+}

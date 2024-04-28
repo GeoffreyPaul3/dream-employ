@@ -41,7 +41,7 @@ export default function JobPage({
               {applicationUrl ? (
                 <Link
                   href={new URL(applicationUrl).origin}
-                  className="text-blue-500 hover:underline"
+                  className="text-green-500 hover:underline"
                 >
                   {companyName}
                 </Link>
@@ -63,12 +63,10 @@ export default function JobPage({
               <Globe2 size={16} className="shrink-0" />
               {location || "Worldwide"}
             </p>
-            {salary !== null && typeof salary === "number" && (
-              <p className="flex items-center gap-1.5">
-                <Banknote size={16} className="shrink-0" />
-                {formatMoney(salary)}
-              </p>
-            )}
+            <p className="flex items-center gap-1.5">
+              <Banknote size={16} className="shrink-0" />
+              {formatMoney(salary)}
+            </p>
           </div>
         </div>
       </div>
