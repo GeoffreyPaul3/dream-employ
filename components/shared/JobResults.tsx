@@ -7,7 +7,7 @@ import Link from "next/link";
 import JobListItem from "./JobListItem";
 import { Button } from "../ui/button";
 import Image from "next/image";
-import { Badge } from "../ui/badge";
+
 
 interface JobResultsProps {
   filterValues: JobFilterValues;
