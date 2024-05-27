@@ -80,6 +80,11 @@ const MobileNav = () => {
                     How It Works
                   </Button>
                 </Link>
+                <Link href="/pricing" onClick={handleClose}>
+                  <Button variant="ghost" className="font-semibold text-md">
+                    Pricing
+                  </Button>
+                </Link>
                 <Link href="/privacy" onClick={handleClose}>
                   <Button
                     variant="link"

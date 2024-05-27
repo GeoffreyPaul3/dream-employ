@@ -35,6 +35,11 @@ export default function Navbar() {
               How It Works
             </Button>
           </Link>
+          <Link href="/pricing">
+            <Button variant="ghost" className="font-semibold text-md">
+              Pricing
+            </Button>
+          </Link>
         </div>
         <Button
           asChild

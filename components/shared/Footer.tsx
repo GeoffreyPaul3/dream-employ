@@ -40,6 +40,11 @@ export default function Footer() {
                 How It Works
               </Button>
             </Link>
+            <Link href="/pricing">
+              <Button variant="ghost" className="font-semibold text-md">
+                Pricing
+              </Button>
+            </Link>
             <Link href="/privacy">
               <Button variant="ghost" className="font-medium text-md">
                 Privacy Policy
