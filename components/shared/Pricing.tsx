@@ -27,7 +27,7 @@ const Pricing = () => {
 
             <Link
               className="mt-4 block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
-              href="/https://geofreypaul.gumroad.com/l/hqsqv"
+              href="https://geofreypaul.gumroad.com/l/hqsqv"
             >
               Get Started
             </Link>
@@ -146,7 +146,7 @@ const Pricing = () => {
 
             <Link
               className="mt-4 block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
-              href="/https://geofreypaul.gumroad.com/l/ihubw"
+              href="https://geofreypaul.gumroad.com/l/ihubw"
             >
               Get Started
             </Link>
@@ -284,7 +284,7 @@ const Pricing = () => {
 
             <Link
               className="mt-4 block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
-              href="/https://geofreypaul.gumroad.com/l/esdfj"
+              href="https://geofreypaul.gumroad.com/l/esdfj"
             >
               Get Started
             </Link>
