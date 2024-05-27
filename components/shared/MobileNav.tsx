@@ -81,7 +81,7 @@ const MobileNav = () => {
                   </Button>
                 </Link>
                 <Link href="/pricing" onClick={handleClose}>
-                  <Button variant="ghost" className="font-semibold text-md">
+                  <Button variant="link" className="font-semibold text-md w-full">
                     Pricing
                   </Button>
                 </Link>
