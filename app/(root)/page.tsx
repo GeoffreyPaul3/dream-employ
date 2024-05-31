@@ -67,7 +67,7 @@ export default function Home({
           <div className="space-y-5">
             <h1 className="h1-bold">{getTitle(filterValues)}</h1>
             <p className="text-muted-foreground p-regular-20 md:p-regular-24">
-              Explore thousands of job postings from best the employers in
+              Explore thousands of job postings from the best employers in
               Malawi and beyond.
             </p>
             <Button
