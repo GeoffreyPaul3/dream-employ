@@ -21,7 +21,6 @@ export async function createJobPosting(formData: FormData) {
     applicationEmail,
     applicationUrl,
     description,
-    salary,
   } = createJobSchema.parse(values);
 
   const slug = `${toSlug(title)}-${nanoid(10)}`;
@@ -53,7 +52,6 @@ export async function createJobPosting(formData: FormData) {
       applicationEmail: applicationEmail?.trim(),
       applicationUrl: applicationUrl?.trim(),
       description: description?.trim(),
-      salary: parseInt(salary),
     },
   });
 
