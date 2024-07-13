@@ -85,6 +85,7 @@ export default function Home({
             width={500}
             height={500}
             className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh]"
+            loading="lazy"
           />
         </div>
       </Suspense>

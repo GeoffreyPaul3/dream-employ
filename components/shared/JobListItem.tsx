@@ -1,7 +1,7 @@
 import LogoPlace from "../../public/assets/Logo.png";
-import { formatMoney, relativeDate } from "@/lib/utils";
+import { relativeDate } from "@/lib/utils";
 import { Job } from "@prisma/client";
-import { Banknote, Briefcase, Clock, Globe2, MapPin } from "lucide-react";
+import { Briefcase, Clock, Globe2, MapPin } from "lucide-react";
 import Image from "next/image";
 import { Badge } from "../ui/badge";
 
@@ -16,7 +16,6 @@ export default function JobListItem({
     type,
     locationType,
     location,
-    salary,
     companyLogoUrl,
     createdAt,
   },
@@ -48,10 +47,7 @@ export default function JobListItem({
             <Globe2 size={16} className="shrink-0" />
             {location || "Worldwide"}
           </p>
-          <p className="flex items-center gap-1.5">
-            <Banknote size={16} className="shrink-0" />
-            {formatMoney(salary)}
-          </p>
+
           <p className="flex items-center gap-1.5 sm:hidden">
             <Clock size={16} className="shrink-0" />
             {relativeDate(createdAt)}

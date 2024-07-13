@@ -22,7 +22,6 @@ import { draftToMarkdown } from "markdown-draft-js";
 import { useForm } from "react-hook-form";
 import { createJobPosting } from "./action";
 
-
 export default function NewJobForm() {
   const form = useForm<CreateJobValues>({
     resolver: zodResolver(createJobSchema),
@@ -46,8 +45,6 @@ export default function NewJobForm() {
         formData.append(key, value);
       }
     });
-
-
 
     try {
       await createJobPosting(formData);
@@ -271,19 +268,7 @@ export default function NewJobForm() {
                 </FormItem>
               )}
             />
-            <FormField
-              control={control}
-              name="salary"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Salary</FormLabel>
-                  <FormControl>
-                    <Input {...field} type="number" />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+
             <LoadingButton type="submit" loading={isSubmitting}>
               Submit
             </LoadingButton>
